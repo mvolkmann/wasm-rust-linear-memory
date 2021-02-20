@@ -1,5 +1,9 @@
 # wasm-rust-linear-memory
 
+This demonstrates sharing memory between Rust and JavaScript using WASM.
+
+The steps followed to create this were:
+
 1. Create the project with
    `cargo new --lib wasm-rust-linear-memory`
 
@@ -20,6 +24,8 @@
 1. Create `index.js`
 
 1. Create `index.html`
+
+To run this:
 
 1. Start a local HTTP file server.
    One approach is to install [Deno](https://deno.land/)
