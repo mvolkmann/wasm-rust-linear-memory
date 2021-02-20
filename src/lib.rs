@@ -31,6 +31,11 @@ pub fn get_buffer_pointer() -> *const f64 {
 }
 
 #[wasm_bindgen]
+pub fn get_buffer_size() -> usize {
+    BUFFER_SIZE
+}
+
+#[wasm_bindgen]
 pub fn read(index: usize) -> f64 {
     let value: f64;
     unsafe {
