@@ -13,10 +13,10 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn store0(value: f64) {
+pub fn store(index: usize, value: f64) {
     //log(&format!("store0: value = {}", value));
     unsafe {
-        BUFFER[0] = value;
+        BUFFER[index] = value;
         //log(&format!("store0: buffer = {:?}", BUFFER));
     }
 }
@@ -31,11 +31,11 @@ pub fn get_buffer_pointer() -> *const f64 {
 }
 
 #[wasm_bindgen]
-pub fn read1() -> f64 {
+pub fn read(index: usize) -> f64 {
     let value: f64;
     unsafe {
         //log(&format!("read1: buffer = {:?}", BUFFER));
-        value = BUFFER[1];
+        value = BUFFER[index];
     }
     //log(&format!("read1: value = {}", value));
     value
