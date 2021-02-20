@@ -17,6 +17,10 @@
 
 1. Build the project with `wasm-pack build --target web`
 
+1. Create `index.js`
+
+1. Create `index.html`
+
 1. Start a local HTTP file server.
    One approach is to install [Deno](https://deno.land/)
    and then enter these commands:
